@@ -110,8 +110,8 @@ class UpdateU(torch.nn.Module):
         return output
 
 
-class SchNet(torch.nn.Module):
-    """Complete SchNet model implementation with deep MLP and ResNet optimization"""
+class SchNetPlus(torch.nn.Module):
+    """Complete SchNetPlus model implementation with deep MLP and ResNet optimization"""
 
     def __init__(
         self,
@@ -122,7 +122,7 @@ class SchNet(torch.nn.Module):
         num_filters=128,
         num_gaussians=50,
     ):
-        super(SchNet, self).__init__()
+        super(SchNetPlus, self).__init__()
         self.cutoff = cutoff
         self.num_layers = num_layers
         self.hidden_channels = hidden_channels
